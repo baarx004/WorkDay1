@@ -3,17 +3,17 @@
 Public Class Form1
 
     Private Sub btnFirstName_Click(sender As System.Object, e As System.EventArgs) Handles btnFirstName.Click
-        Dim FN As String
-        FN = txtFullName.Text
+        Dim St As String
+        St = txtFullName.Text
 
-        Dim FN2 As String
-        FN2 = FN.Trim()
+        Dim St2 As String
+        St2 = St.Trim()
 
         Dim FirstSpace As Integer
-        FirstSpace = FN2.IndexOf(" ")
+        FirstSpace = St2.IndexOf(" ")
 
         Dim FirstName As String
-        FirstName = FN2.Substring(0, FirstSpace)
+        FirstName = St2.Substring(0, FirstSpace)
 
         txtFirstName.Text = FirstName
 
